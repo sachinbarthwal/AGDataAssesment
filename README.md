@@ -16,6 +16,8 @@ This project consists of an Angular frontend and a .NET Core backend API with Ra
 3. The application is configured to connect to RavenDB at http://localhost:8080. If your RavenDB is running on a different URL, update the `appsettings.json` file in the AddressAPI project accordingly.
 4. :warning: **Please make sure RavenDb is installed with AddressDb database else this application will fail**
 
+
+
 ## Setup Instructions
 
 1. Clone the repository:
@@ -36,7 +38,16 @@ npm install
 npm install bootstrap
 ```
 
-5. Run the application:
+### Running the Application
+
+After completing the setup, you have two options to run the application:
+
+1. **Using the Batch File**:  
+   A batch file named `start-app.bat` has been added to the root folder of the project. This file can be used to start both the backend and frontend services with a single command. Simply double-click on `start-app.bat` to run the application.
+
+2. **Using Visual Studio**:  
+   Alternatively, you can run the application directly through Visual Studio. Open the solution file in Visual Studio, and start the application by pressing `F5` or using the "Start Debugging" option.
+
 - Start the backend:
   ```
   cd ../AddressAPI
@@ -48,9 +59,9 @@ npm install bootstrap
   ng serve
   ```
 
-5. Open a web browser and navigate to `http://localhost:4200`
+- Open a web browser and navigate to `http://localhost:4200`
 
-## Running the Application
+## Ports
 
 - The backend API will be available at `https://localhost:7262`
 - The frontend will be served at `http://localhost:4200`
